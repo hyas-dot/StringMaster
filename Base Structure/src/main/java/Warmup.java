@@ -5,9 +5,20 @@ public class Warmup {
      * In the first function, your inputs are a number and a sentence
      * @return is the number th word of the sentence
      */
-    public String wordFinder(String sentence, int number) {
-        return null;
+    public String wordFinder(String sentence, int number)
+    {
+        String[] word= sentence.split(" ");
+        if (number>0&&number<=word.length)
+        {
+            return word[number-1];
+        }
+        else
+        {
+            return"The number is out of range!";
+        }
+
     }
+
 
     /**
      * Goal : Basic introduction to Strings & using foreach
